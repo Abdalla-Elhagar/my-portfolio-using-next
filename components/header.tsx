@@ -2,6 +2,7 @@ import Link from "next/link";
 import NavBar from "./navBar";
 import MobileNav from "./mobileNav";
 import Logo from "./logo";
+import { Button } from "./ui/button";
 
 export default function Header() {
   return (
@@ -16,7 +17,7 @@ export default function Header() {
             <NavBar textSize="md" />
           </nav>
           <Link href={"/contact"}>
-            <button>Hire me</button>
+            <Button>Hire me</Button>
           </Link>
         </div>
         {/* mobile nav */}
