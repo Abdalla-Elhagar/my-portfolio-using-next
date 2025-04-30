@@ -9,44 +9,44 @@ interface navItems {
   path: string;
 }
 
-const navItems: navItems[] = [
+export const navItems: navItems[] = [
   {
     id: "1",
-    name: "home",
+    name: "Home",
     path: "/",
   },
   {
     id: "2",
-    name: "services",
+    name: "Services",
     path: "/services",
   },
   {
     id: "3",
-    name: "resume",
+    name: "Resume",
     path: "/resume",
   },
   {
     id: "4",
-    name: "contact",
+    name: "Contact",
     path: "/contact",
   },
 ];
 
-export default function NavBar() {
+export default function NavBar({ textSize }: { textSize: string }) {
   const pathname = usePathname();
   return (
-    <nav className="flex gap-8">
+    <>
       {navItems.map((link: navItems) => (
         <Link
           className={`${
             link.path === pathname && "border-b-2 border-main text-main"
-          } hover:text-mainHover hover:border-b-2 hover:border-mainHover`}
+          } hover:text-mainHover text-${textSize} hover:border-b-2 hover:border-mainHover`}
           key={link.id}
           href={link.path}
         >
           {link.name}
         </Link>
       ))}
-    </nav>
+    </>
   );
 }
