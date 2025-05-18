@@ -4,14 +4,15 @@ import { FiDownload } from "react-icons/fi";
 // components
 import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
+        <div className="flex flex-col gap-5 lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
           {/* text */}
-          <div className="text-center lg:text-left">
+          <div className="text-center  order-2 lg:order-none lg:text-left">
             <span className="text-xl">Frontend Developer</span>
             <h1 className="text-4xl font-semibold mb-6">
               Hello I'm <br />
@@ -27,14 +28,16 @@ export default function Home() {
 
             {/* btn and socials */}
             <div className="flex flex-col lg:flex-row items-center gap-8">
-              <Button
-                className="uppercase flex items-center gap-2"
-                variant="outline"
-                size="lg"
-              >
-                <span>DOWNLOAD CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+              <a href="/cv/AbdallaElhagarResume.pdf" download>
+                <Button
+                  className="uppercase flex items-center gap-2 hover:bg-main hover:text-primary transition-all duration-500"
+                  variant="outline"
+                  size="lg"
+                >
+                  <span>DOWNLOAD CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </a>
               <div className="mb-8 lg:mb-0">
                 <Socials
                   containerStyles="flex gap-6"
@@ -44,7 +47,9 @@ export default function Home() {
             </div>
           </div>
           {/* photo */}
-          <Photo />
+          <div className=" order-1 lg:order-none mb-8 lg:mb-0">
+            <Photo />
+          </div>
         </div>
       </div>
     </section>

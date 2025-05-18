@@ -17,19 +17,18 @@ module.exports = {
       lg: "960px",
       xl: "1200px",
     },
-    colors: {
-      primary: "#1c1c22",
-      main: "#00ff99",
-      mainHover: "#00e187",
-    },
-    plugins: [],
+    // احذف هذا الجزء بالكامل:
+    // colors: {
+    //   primary: "#1c1c22",
+    //   main: "#00ff99",
+    //   mainHover: "#00e187",
+    // },
     extend: {
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
       colors: {
+        primary: "#1c1c22",
+        main: "#00ff99",
+        mainHover: "#00e187",
+
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -70,6 +69,11 @@ module.exports = {
           4: "hsl(var(--chart-4))",
           5: "hsl(var(--chart-5))",
         },
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
     },
   },
