@@ -17,12 +17,7 @@ module.exports = {
       lg: "960px",
       xl: "1200px",
     },
-    // احذف هذا الجزء بالكامل:
-    // colors: {
-    //   primary: "#1c1c22",
-    //   main: "#00ff99",
-    //   mainHover: "#00e187",
-    // },
+
     extend: {
       colors: {
         primary: "#1c1c22",
