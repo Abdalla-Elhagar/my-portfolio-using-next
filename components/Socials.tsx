@@ -12,7 +12,7 @@ const socials: socialType[] = [
   { icon: <FiGithub />, path: "https://github.com/Abdalla-Elhagar" },
   {
     icon: <FiLinkedin />,
-    path: "https://www.linkedin.com/in/abdalla-elhgar-92a270241",
+    path: "https://www.linkedin.com/in/abdalla-elhagar-92a270241",
   },
   {
     icon: <FiInstagram />,
