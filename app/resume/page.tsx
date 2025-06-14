@@ -63,7 +63,7 @@ const skills: skillsType[] = [
     icon: <FaReact className="" />,
   },
   {
-    title: "Tailwind CSS",
+    title: "Tailwind",
     icon: <SiTailwindcss className="" />,
   },
   {
@@ -146,7 +146,10 @@ export default function Resume() {
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2">
                     {experience.map((item: experienceType, index: number) => (
-                      <li className="bg-[#232329] h-[184] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                      <li
+                        key={index}
+                        className="bg-[#232329] h-[184] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                      >
                         <span className="text-main">{item.date}</span>
                         <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
                           {item.title}
@@ -174,7 +177,10 @@ export default function Resume() {
                 <ScrollArea className="h-[400px] -mt-5">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]  ">
                     {education.map((item: educationType, index: number) => (
-                      <li className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1">
+                      <li
+                        key={index}
+                        className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                      >
                         <span className="text-main">{item.date}</span>
                         <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
                           {item.title}
@@ -192,12 +198,46 @@ export default function Resume() {
 
             {/* skills */}
             <TabsContent value="skills" className="w-full">
-              skills
+              <div className="flex flex-col gap-[30px] text-center lg:text-left">
+                <h3 className="text-4xl font-bold">My skills</h3>
+                <ScrollArea className="h-[450px]">
+                  <ul className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-[40px] pt-10">
+                    {skills.map((skill: skillsType, index: number) => (
+                      <li
+                        key={index}
+                        className="bg-[#232329] overflow-visible group flex justify-center items-center relative size-[180px] text-[60px] rounded-xl transition-all duration-300 hover:text-mainHover"
+                      >
+                        {skill.icon}
+                        <div className="text-sm text-primary opacity-0 group-hover:opacity-100 transition-all rounded-md duration-300 text-center bg-white px-5 py-1 w-fit absolute -top-7 left-1/2 -translate-x-1/2">
+                          {skill.title}
+                        </div>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollArea>
+              </div>
             </TabsContent>
 
             {/* about */}
             <TabsContent value="about" className="w-full">
-              about
+              <div className="flex flex-col gap-[30px] text-left">
+                <h3 className="text-4xl font-bold">About me</h3>
+                <p className="text-white/60">
+                  Frontend developer skilled in React, Next.js, and Tailwind
+                  CSS. Passionate about building clean and responsive web
+                  interfaces.
+                </p>
+                <ScrollArea className="h-[450px]">
+                  <ul className="grid grid-cols-1 xl:grid-cols-2 gap-[30px] gap-x-[80px] text-start ">
+                    {about.map((item: aboutType, index: number) => (
+                      <li key={index}>
+                        <span className="text-white/60 mr-4">{item.title}</span>
+                        <span className="text-lg">{item.description}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollArea>
+              </div>
             </TabsContent>
           </div>
         </Tabs>

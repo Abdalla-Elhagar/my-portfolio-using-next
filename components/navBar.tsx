@@ -27,8 +27,8 @@ export const navItems: navItems[] = [
   },
   {
     id: "4",
-    name: "Contact",
-    path: "/contact",
+    name: "Projects",
+    path: "/Projects",
   },
 ];
 
