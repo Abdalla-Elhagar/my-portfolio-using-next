@@ -1,12 +1,12 @@
 "use client";
 
 import ProjectsCard from "@/components/projectCard";
-import { TabsContent } from "@/components/ui/tabs";
-import { Tabs, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion, AnimatePresence } from "framer-motion";
 import { ProjectsData } from "./projectData";
 import { ProjectsTypes } from "@/components/types";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import ProjectsContent from "@/components/projectsContent";
 
 export default function Contact() {
   return (
@@ -30,31 +30,31 @@ export default function Contact() {
           className="flex flex-col justify-center items-start lg:flex-row gap-[60px] mt-5"
         >
           <TabsList className="flex flex-col w-full max-w-[300px] mx-auto lg:mx-0 gap-6">
-            <TabsTrigger className="bg-[#232329] py-2 rounded-md" value="All">
+            <TabsTrigger className="bg-[#232329] py-3 rounded-md" value="All">
               All
             </TabsTrigger>
             <TabsTrigger
-              className="bg-[#232329] py-2 rounded-md"
+              className="bg-[#232329] py-3 rounded-md"
               value="HTML&CSS"
             >
               HTML&CSS
             </TabsTrigger>
-            <TabsTrigger className="bg-[#232329] py-2 rounded-md" value="JS">
+            <TabsTrigger className="bg-[#232329] py-3 rounded-md" value="JS">
               JavaScript
             </TabsTrigger>
             <TabsTrigger
-              className="bg-[#232329] py-2 rounded-md"
+              className="bg-[#232329] py-3 rounded-md"
               value="BootStrap"
             >
               BootStrap
             </TabsTrigger>
             <TabsTrigger
-              className="bg-[#232329] py-2 rounded-md"
+              className="bg-[#232329] py-3 rounded-md"
               value="tailWind"
             >
               Tailwind
             </TabsTrigger>
-            <TabsTrigger className="bg-[#232329] py-2 rounded-md" value="React">
+            <TabsTrigger className="bg-[#232329] py-3 rounded-md" value="React">
               React
             </TabsTrigger>
           </TabsList>
@@ -62,157 +62,22 @@ export default function Contact() {
           {/* content */}
           <div className="min-h-[70vh] w-full">
             {/* All projects */}
-            <TabsContent value="All">
-              <ScrollArea className="h-[580px]">
-                <AnimatePresence>
-                  <motion.ul
-                    transition={{ duration: 0.7, delay: 0.3 }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    className=" grid grid-cols-1 lg:grid-cols-2 gap-[50px]"
-                  >
-                    {ProjectsData.map((project: ProjectsTypes) => (
-                      <li
-                        key={project.id}
-                        className="bg-[#232329] h-[280px] rounded-md"
-                      >
-                        <ProjectsCard project={project} />
-                      </li>
-                    ))}
-                  </motion.ul>
-                </AnimatePresence>
-              </ScrollArea>
-            </TabsContent>
+            <ProjectsContent value="All" />
 
             {/* HTML&CSS projects */}
-            <TabsContent value="HTML&CSS">
-              <ScrollArea className="h-[580px]">
-                <AnimatePresence>
-                  <motion.ul
-                    transition={{ duration: 0.7, delay: 0.3 }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className=" grid grid-cols-1 lg:grid-cols-2 gap-[50px]"
-                  >
-                    {ProjectsData.filter((project: ProjectsTypes) =>
-                      project.type.includes("HTML&CSS")
-                    ).map((project: ProjectsTypes) => (
-                      <li
-                        key={project.id}
-                        className="bg-[#232329] h-[280px] rounded-md"
-                      >
-                        <ProjectsCard project={project} />
-                      </li>
-                    ))}
-                  </motion.ul>
-                </AnimatePresence>
-              </ScrollArea>
-            </TabsContent>
+            <ProjectsContent value="HTML&CSS" />
 
             {/* JS projects */}
-            <TabsContent value="JS">
-              <ScrollArea className="h-[580px]">
-                <AnimatePresence>
-                  <motion.ul
-                    transition={{ duration: 0.7, delay: 0.3 }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className=" grid grid-cols-1 lg:grid-cols-2 gap-[50px]"
-                  >
-                    {ProjectsData.filter((project: ProjectsTypes) =>
-                      project.type.includes("JS")
-                    ).map((project: ProjectsTypes) => (
-                      <li
-                        key={project.id}
-                        className="bg-[#232329] h-[280px] rounded-md"
-                      >
-                        <ProjectsCard project={project} />
-                      </li>
-                    ))}
-                  </motion.ul>
-                </AnimatePresence>
-              </ScrollArea>
-            </TabsContent>
+            <ProjectsContent value="JS" />
 
             {/* BootStrap projects */}
-            <TabsContent value="BootStrap">
-              <ScrollArea className="h-[580px]">
-                <AnimatePresence>
-                  <motion.ul
-                    transition={{ duration: 0.7, delay: 0.3 }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className=" grid grid-cols-1 lg:grid-cols-2 gap-[50px]"
-                  >
-                    {ProjectsData.filter((project: ProjectsTypes) =>
-                      project.type.includes("BootStrap")
-                    ).map((project: ProjectsTypes) => (
-                      <li
-                        key={project.id}
-                        className="bg-[#232329] h-[280px] rounded-md"
-                      >
-                        <ProjectsCard project={project} />
-                      </li>
-                    ))}
-                  </motion.ul>
-                </AnimatePresence>
-              </ScrollArea>
-            </TabsContent>
+            <ProjectsContent value="BootStrap" />
 
             {/* tailWind projects */}
-            <TabsContent value="tailWind">
-              <ScrollArea className="h-[580px]">
-                <AnimatePresence>
-                  <motion.ul
-                    transition={{ duration: 0.7, delay: 0.3 }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className=" grid grid-cols-1 lg:grid-cols-2 gap-[50px]"
-                  >
-                    {ProjectsData.filter((project: ProjectsTypes) =>
-                      project.type.includes("tailWind")
-                    ).map((project: ProjectsTypes) => (
-                      <li
-                        key={project.id}
-                        className="bg-[#232329] h-[280px] rounded-md"
-                      >
-                        <ProjectsCard project={project} />
-                      </li>
-                    ))}
-                  </motion.ul>
-                </AnimatePresence>
-              </ScrollArea>
-            </TabsContent>
+            <ProjectsContent value="tailWind" />
 
             {/* React projects */}
-            <TabsContent value="React">
-              <ScrollArea className="h-[580px]">
-                <AnimatePresence>
-                  <motion.ul
-                    transition={{ duration: 0.7, delay: 0.3 }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className=" grid grid-cols-1 lg:grid-cols-2 gap-[50px]"
-                  >
-                    {ProjectsData.filter((project: ProjectsTypes) =>
-                      project.type.includes("React")
-                    ).map((project: ProjectsTypes) => (
-                      <li
-                        key={project.id}
-                        className="bg-[#232329] h-[280px] rounded-md"
-                      >
-                        <ProjectsCard project={project} />
-                      </li>
-                    ))}
-                  </motion.ul>
-                </AnimatePresence>
-              </ScrollArea>
-            </TabsContent>
+            <ProjectsContent value="React" />
           </div>
         </Tabs>
       </div>

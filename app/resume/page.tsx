@@ -1,5 +1,4 @@
 "use client";
-import { title } from "process";
 import { FaHtml5, FaCss3, FaJs, FaBootstrap, FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs, SiRedux } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -10,7 +9,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 // types imports
 import {
@@ -115,7 +114,7 @@ export default function Resume() {
     <motion.section
       transition={{ duration: 0.4, delay: 2, ease: "easeInOut" }}
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{ opacity: 1 }} exit={{opacity:0}}
       className="min-h-[80vh] flex justify-center items-center py-12 lg:py-0"
     >
       <div className="container mx-auto">
@@ -144,7 +143,14 @@ export default function Resume() {
                   control with Git.
                 </p>
                 <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2">
+
+                 <AnimatePresence>
+                  <motion.ul
+                    transition={{ duration: 0.7, delay: 0.3 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }} exit={{opacity:0}}
+                    className=" grid grid-cols-1 lg:grid-cols-2 gap-[40px]"
+                  >
                     {experience.map((item: experienceType, index: number) => (
                       <li
                         key={index}
@@ -160,7 +166,8 @@ export default function Resume() {
                         </div>
                       </li>
                     ))}
-                  </ul>
+                  </motion.ul>
+                </AnimatePresence>
                 </ScrollArea>
               </div>
             </TabsContent>
@@ -175,7 +182,13 @@ export default function Resume() {
                   and Next.js through academic and personal projects.
                 </p>
                 <ScrollArea className="h-[400px] -mt-5">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]  ">
+                  <AnimatePresence>
+                  <motion.ul
+                    transition={{ duration: 0.7, delay: 0.3 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }} exit={{opacity:0}}
+                    className=" grid grid-cols-1 lg:grid-cols-2 gap-[40px]"
+                  >
                     {education.map((item: educationType, index: number) => (
                       <li
                         key={index}
@@ -191,7 +204,8 @@ export default function Resume() {
                         </div>
                       </li>
                     ))}
-                  </ul>
+                  </motion.ul>
+                </AnimatePresence>
                 </ScrollArea>
               </div>
             </TabsContent>
@@ -201,7 +215,13 @@ export default function Resume() {
               <div className="flex flex-col gap-[30px] text-center lg:text-left">
                 <h3 className="text-4xl font-bold">My skills</h3>
                 <ScrollArea className="h-[450px]">
-                  <ul className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-[40px] pt-10">
+                  <AnimatePresence>
+                  <motion.ul
+                    transition={{ duration: 0.7, delay: 0.3 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }} exit={{opacity:0}}
+                    className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-[40px] pt-10"
+                  >
                     {skills.map((skill: skillsType, index: number) => (
                       <li
                         key={index}
@@ -213,7 +233,8 @@ export default function Resume() {
                         </div>
                       </li>
                     ))}
-                  </ul>
+                  </motion.ul>
+                </AnimatePresence>
                 </ScrollArea>
               </div>
             </TabsContent>
@@ -228,14 +249,20 @@ export default function Resume() {
                   interfaces.
                 </p>
                 <ScrollArea className="h-[450px]">
-                  <ul className="grid grid-cols-1 xl:grid-cols-2 gap-[30px] gap-x-[80px] text-start ">
+                  <AnimatePresence>
+                  <motion.ul transition={{ duration: 0.7, delay: 0.3 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{opacity:0}}
+                    className="grid grid-cols-1 xl:grid-cols-2 gap-[30px] gap-x-[80px] text-start">
                     {about.map((item: aboutType, index: number) => (
                       <li key={index}>
                         <span className="text-white/60 mr-4">{item.title}</span>
                         <span className="text-lg">{item.description}</span>
                       </li>
                     ))}
-                  </ul>
+                  </motion.ul>
+                  </AnimatePresence>
                 </ScrollArea>
               </div>
             </TabsContent>
