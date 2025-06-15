@@ -112,7 +112,7 @@ const experience: experienceType[] = [
 
 export default function Resume() {
   return (
-    <motion.div
+    <motion.section
       transition={{ duration: 0.4, delay: 2, ease: "easeInOut" }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -242,6 +242,6 @@ export default function Resume() {
           </div>
         </Tabs>
       </div>
-    </motion.div>
+    </motion.section>
   );
 }
