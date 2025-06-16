@@ -8,7 +8,7 @@ import NavBar from "./navBar";
 export default function MobileNav() {
   return (
     <Sheet>
-      <SheetTrigger className="flex justify-center items-center">
+      <SheetTrigger className="flex justify-center items-center" aria-label="Open mobile navigation menu">
         <CiMenuFries className="text-[32px] text-main" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
