@@ -2,12 +2,6 @@
 import { FaHtml5, FaCss3, FaJs, FaBootstrap, FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs, SiRedux } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { AnimatePresence, motion } from "framer-motion";
 
