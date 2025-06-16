@@ -22,6 +22,8 @@ export default function Photo() {
             src={profileImage}
             alt="Profile image"
             priority
+            width={200}
+            height={200}
             quality={100}
             className="object-contain size-full rounded-full"
           />

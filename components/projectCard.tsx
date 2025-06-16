@@ -30,7 +30,7 @@ export default function ProjectCard({ project }: { project: ProjectsTypes }) {
     </li>
     {showProjectsDataWindow && 
     <div className="bg-black/70 fixed top-0 left-0 w-screen h-screen flex justify-center items-center">
-      <div className="bg-primary w-full md:w-[600px] h-5/6 relative rounded-lg">
+      <div className="bg-primary w-5/6 md:w-[600px] h-5/6 relative rounded-lg">
         <button className="absolute -right-5 -top-5 text-2xl transition duration-300 hover:text-mainHover" onClick={()=> setShowProjectsDataWindow(false)}><IoClose /></button>
         <Image src={project.image} alt="project image" className="w-full rounded-t-lg" />
         <div className="text grid grid-cols-1 gap-5 m-3">

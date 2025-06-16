@@ -7,16 +7,17 @@ import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi";
 interface socialType {
   icon: ReactNode;
   path: string;
+  message: string;
 }
 const socials: socialType[] = [
-  { icon: <FiGithub />, path: "https://github.com/Abdalla-Elhagar" },
+  { icon: <FiGithub />, path: "https://github.com/Abdalla-Elhagar" , message: "Visit my GitHub profile" },
   {
     icon: <FiLinkedin />,
-    path: "https://www.linkedin.com/in/abdalla-elhagar-92a270241",
+    path: "https://www.linkedin.com/in/abdalla-elhagar-92a270241", message: "Visit my LinkedIn profile" ,
   },
   {
     icon: <FiInstagram />,
-    path: "https://www.instagram.com/abdalla_elhagar0/",
+    path: "https://www.instagram.com/abdalla_elhagar0/", message: "Visit my Instagram profile" ,
   },
 ];
 export default function Socials({
@@ -37,6 +38,7 @@ export default function Socials({
             className={iconStyles}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={item.message}
           >
             {item.icon}
           </Link>

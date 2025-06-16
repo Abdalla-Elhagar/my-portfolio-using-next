@@ -1,14 +1,16 @@
+"use client";
+
 import { motion } from "framer-motion";
 
 const stairsAnimation = {
   initial: {
-    top: "0%",
+    y: "0%",
   },
   animate: {
-    top: "100%",
+    y: "100%",
   },
   exit: {
-    top: ["100%", "0%"],
+    y: ["100%", "0%"],
   },
 };
 

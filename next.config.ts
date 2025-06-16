@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true, // استخدم SWC بدلاً من Babel
+  experimental: {
+    legacyBrowsers: false, // يمنع دعم المتصفحات القديمة زي IE
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
