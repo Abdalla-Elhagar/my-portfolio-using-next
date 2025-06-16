@@ -1,11 +1,7 @@
 "use client";
 
-import ProjectsCard from "@/components/projectCard";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { motion, AnimatePresence } from "framer-motion";
-import { ProjectsData } from "./projectData";
-import { ProjectsTypes } from "@/components/types";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import { motion } from "framer-motion";
 import ProjectsContent from "@/components/projectsContent";
 
 export default function Contact() {

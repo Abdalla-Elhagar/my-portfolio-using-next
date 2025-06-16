@@ -16,7 +16,11 @@ export default function Header() {
           <nav className="flex gap-8">
             <NavBar textSize="md" />
           </nav>
-          <Link href={"/contact"}>
+          <Link
+      href={`https://mail.google.com/mail/?view=cm&fs=1&to=abdallaelhgar@gmail.com&su=Job Opportunity for Frontend Developer&body=Hi Abdallah,%0A%0AWe came across your portfolio and we're interested in offering you a position.%0A%0ARegards,%0A[Your Company Name]`}
+      passHref
+      target="_blank"
+    >
             <Button>Hire me</Button>
           </Link>
         </div>
