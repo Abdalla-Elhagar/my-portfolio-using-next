@@ -1,13 +1,19 @@
+
+"use client"
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
 // components
 import Socials from "@/components/Socials";
 import Photo from "@/components/Photo";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <section className="h-full">
+    <motion.section
+    transition={{ duration: 0.4, delay: 2, ease: "easeInOut" }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }} exit={{opacity:0}} className="h-full">
       <div className="container mx-auto h-full">
         <div className="flex flex-col gap-5 lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
           {/* text */}
@@ -51,6 +57,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
