@@ -12,7 +12,7 @@ export default function ProjectsContent({value}:{value:string;}) {
   return (
     <TabsContent value={value}>
               <ScrollArea className="h-[580px]">
-                <AnimatePresence>
+                <AnimatePresence mode="wait">
                   <motion.ul
                     transition={{ duration: 0.7, delay: 0.3 }}
                     initial={{ opacity: 0 }}

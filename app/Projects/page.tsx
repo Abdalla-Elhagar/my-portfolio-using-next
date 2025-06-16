@@ -22,6 +22,7 @@ export default function Contact() {
         </p>
 
         <Tabs
+        key="portfolio-tabs"
           defaultValue="All"
           className="flex flex-col justify-center items-start lg:flex-row gap-[60px] mt-5"
         >

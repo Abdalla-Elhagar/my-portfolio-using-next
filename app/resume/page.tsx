@@ -113,6 +113,7 @@ export default function Resume() {
     >
       <div className="container mx-auto">
         <Tabs
+        key="portfolio-tabs"
           defaultValue="experience"
           className="flex flex-col justify-center items-start lg:flex-row gap-[60px]"
         >
@@ -138,7 +139,7 @@ export default function Resume() {
                 </p>
                 <ScrollArea className="h-[400px]">
 
-                 <AnimatePresence>
+                 <AnimatePresence mode="wait">
                   <motion.ul
                     transition={{ duration: 0.7, delay: 0.3 }}
                     initial={{ opacity: 0 }}
@@ -176,7 +177,7 @@ export default function Resume() {
                   and Next.js through academic and personal projects.
                 </p>
                 <ScrollArea className="h-[400px] -mt-5">
-                  <AnimatePresence>
+                  <AnimatePresence mode="wait">
                   <motion.ul
                     transition={{ duration: 0.7, delay: 0.3 }}
                     initial={{ opacity: 0 }}
@@ -209,7 +210,7 @@ export default function Resume() {
               <div className="flex flex-col gap-[30px] text-center lg:text-left">
                 <h3 className="text-4xl font-bold">My skills</h3>
                 <ScrollArea className="h-[450px]">
-                  <AnimatePresence>
+                  <AnimatePresence mode="wait">
                   <motion.ul
                     transition={{ duration: 0.7, delay: 0.3 }}
                     initial={{ opacity: 0 }}
@@ -243,7 +244,7 @@ export default function Resume() {
                   interfaces.
                 </p>
                 <ScrollArea className="h-[450px]">
-                  <AnimatePresence>
+                  <AnimatePresence mode="wait">
                   <motion.ul transition={{ duration: 0.7, delay: 0.3 }}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
