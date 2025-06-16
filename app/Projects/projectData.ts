@@ -8,7 +8,7 @@ import toDoList from "@/public/assets/projects/TodoList.webp";
 import shopsy from "@/public/assets/projects/shopsy.webp";
 import ReactPortfolio from "@/public/assets/projects/ReactPortfolio.webp";
 import ReBook from "@/public/assets/projects/ReBook.webp";
-import shoppingCart from "@/public/assets/projects/shoppingCart.webp";
+import shoppingCart from "@/public/assets/projects/ShoppingCart.webp";
 import webMasterTask1 from "@/public/assets/projects/task_1.webp";
 import viva from "@/public/assets/projects/viva.webp";
 import weatherApp from "@/public/assets/projects/weatherApp.webp";
