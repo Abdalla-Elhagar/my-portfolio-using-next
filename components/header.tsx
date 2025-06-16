@@ -13,7 +13,7 @@ export default function Header() {
 
         {/* Desktop nav & hire me */}
         <div className="hidden lg:flex items-center gap-8">
-          <nav className="flex gap-8">
+          <nav role="navigation" aria-label="Mobile Navigation Menu" className="flex gap-8">
             <NavBar textSize="md" />
           </nav>
           <Link
