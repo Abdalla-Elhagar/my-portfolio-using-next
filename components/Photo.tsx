@@ -16,7 +16,7 @@ export default function Photo() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2.2, duration: 0.4, ease: "easeInOut" }}
-          className="mx-auto size-[298px] rounded-full lg:size-[498px] mix-blend-lighten absolute"
+          className="mx-auto size-[250px] md:size-[298px] rounded-full lg:size-[390px] mix-blend-lighten absolute"
         >
           <Image
             src={profileImage}
@@ -24,14 +24,14 @@ export default function Photo() {
             priority
             width={200}
             height={200}
-            quality={100}
+            quality={70}
             className="object-contain size-full rounded-full"
           />
         </motion.div>
 
         {/* circle */}
         <motion.svg
-          className="size-[300px] lg:size-[506px] "
+          className="size-[250px] md:size-[300px] lg:size-[395px] "
           fill="transparent"
           viewBox=" 0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
