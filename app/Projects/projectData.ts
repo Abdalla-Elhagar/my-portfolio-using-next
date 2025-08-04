@@ -21,6 +21,7 @@ export const ProjectsData: ProjectsTypes[] = [
     name: "Template 2",
     image: template2,
     type: ["HTML&CSS"],
+    technologies: ["HTML", "CSS"],
     more: [
       "I made this project because i wanted to apply what i learned in HTML and CSS.",
       "I used the Hover in many sections in this project, and used the flex and grid to align the items, that was an awesome challenge, and i gained some experience, and i enjoyed",
@@ -33,6 +34,7 @@ export const ProjectsData: ProjectsTypes[] = [
     name: "Template 3",
     image: template3,
     type: ["HTML&CSS"],
+    technologies: ["HTML", "CSS"],
     more: [
       "I made this project because i wanted to apply what i learned in HTML and CSS.",
       "I used the Hover and animation in many sections in this project.",
@@ -47,6 +49,7 @@ export const ProjectsData: ProjectsTypes[] = [
     name: "JS Template",
     image: jsTemplate,
     type: ["JS"],
+    technologies: ["HTML", "CSS", "JS"],
     more: [
       "I made this project because i wanted to apply what i learned in Java Script.",
       "I used the DOM to make Events like open the sitting, change the main color of page, chainge the image of Home section, make images to change randomly, change the image of about us section, and add the bullets.",
@@ -60,6 +63,7 @@ export const ProjectsData: ProjectsTypes[] = [
     name: "First Bootstrap Project",
     image: BootStrap,
     type: ["BootStrap"],
+    technologies: ["HTML", "BootStrap"],
     more: [
       "I made this project because i wanted to apply what i learned in Bootstrap, that was an awesome challenge, and i gained some experience, and i enjoyed",
     ],
@@ -71,6 +75,7 @@ export const ProjectsData: ProjectsTypes[] = [
     name: "First Portfolio",
     image: firstPortfolio,
     type: ["HTML&CSS"],
+    technologies: ["HTML", "CSS"],
     more: [
       "I made this project because i wanted to try to make a portfolio.",
       "I used HTML and CSS, that was an awesome challenge, and i gained some experience, and i enjoyed",
@@ -83,6 +88,7 @@ export const ProjectsData: ProjectsTypes[] = [
     name: "GitHub Repos",
     image: githubRepo,
     type: ["JS"],
+    technologies: ["HTML", "CSS", "JS"],
     more: [
       "I made this project because i wanted to apply what i learned in Java Script.",
       "in this project i used feach APIs to take the data of repos from GitHub.",
@@ -96,6 +102,7 @@ export const ProjectsData: ProjectsTypes[] = [
     name: "To Do List",
     image: toDoList,
     type: ["JS"],
+    technologies: ["HTML", "CSS", "JS"],
     more: [
       "I made this project because i wanted to apply what i learned in Java Script.",
       "I used the DOM features to add tasks to the padge.",
@@ -112,6 +119,8 @@ export const ProjectsData: ProjectsTypes[] = [
     name: "Shopsy",
     image: shopsy,
     type: ["React", "tailWind"],
+    technologies: ["React", "TailWind", "Framer-Motion"],
+
     more: [
       "I made this project because i wanted to apply what i learned in React and Tailwind.",
       "in this project i added alot of animation using framer-motion.",
@@ -126,6 +135,7 @@ export const ProjectsData: ProjectsTypes[] = [
     name: "React Portfolio",
     image: ReactPortfolio,
     type: ["React", "tailWind"],
+    technologies: ["React", "TailWind", "Framer-Motion"],
     more: [
       "A personal portfolio website built using React and Tailwind CSS.",
       "Showcases all previous front-end projects in a clean and modern layout.",
@@ -142,7 +152,15 @@ export const ProjectsData: ProjectsTypes[] = [
     id: 12,
     name: "ReBook",
     image: ReBook,
-    type: ["React", "tailWind", "SASS"],
+    type: ["React", "tailWind", "SASS", "Redux-Toolkit"],
+    technologies: [
+      "React",
+      "TailWind",
+      "Framer-Motion",
+      "SASS",
+      "Swiper",
+      "Lazy-Loading",
+    ],
     more: [
       "Rebook is a social book exchange platform.",
       "designed for readers who want to share and discover used books.",
@@ -160,6 +178,7 @@ export const ProjectsData: ProjectsTypes[] = [
     name: "Shopping cart",
     image: shoppingCart,
     type: ["JS", "tailWind"],
+    technologies: ["JS", "TailWind"],
     more: [
       "A front-end project called Shopping Cart, developed during the Webmasters training.",
       "Built using HTML, Tailwind CSS, and JavaScript.",
@@ -177,6 +196,7 @@ export const ProjectsData: ProjectsTypes[] = [
     name: "Web Masters Task1",
     image: webMasterTask1,
     type: ["HTML&CSS"],
+    technologies: ["HTML", "CSS"],
     more: [
       "A front-end project built using only HTML and CSS.",
       "This was the first task during the Webmasters training.",
@@ -193,6 +213,8 @@ export const ProjectsData: ProjectsTypes[] = [
     name: "Viva Decor",
     image: viva,
     type: ["tailWind"],
+    technologies: ["HTML", "TailWind"],
+
     more: [
       "A front-end project named VivaDecor, developed as part of the Webmasters training tasks.",
       "Built using HTML and styled entirely with the Tailwind CSS framework.",
@@ -209,6 +231,8 @@ export const ProjectsData: ProjectsTypes[] = [
     name: "weather App",
     image: weatherApp,
     type: ["React", "tailWind"],
+    technologies: ["React", "TailWind"],
+
     more: [
       "A weather application developed as part of the Webmasters training tasks.",
       "Built using React and Tailwind CSS.",
@@ -226,6 +250,14 @@ export const ProjectsData: ProjectsTypes[] = [
     name: "webMasters E-commerce",
     image: webMasterECommerce,
     type: ["React", "tailWind"],
+    technologies: [
+      "React",
+      "TailWind",
+      "Framer-Motion",
+      "Swiper",
+      "Redux-Toolkit",
+    ],
+
     more: [
       "A complete front-end e-Commerce application developed as the final task in the Webmasters training program.",
       "Built using React, Redux Toolkit, and Tailwind CSS.",

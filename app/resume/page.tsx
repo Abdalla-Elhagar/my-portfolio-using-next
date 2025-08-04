@@ -22,7 +22,7 @@ const about: aboutType[] = [
   { title: "phone", description: "(+20) 112 935 2754" },
   {
     title: "Experience",
-    description: "3+ months",
+    description: "+1 Year",
   },
   { title: "Nationality", description: "Egyptian" },
   {
@@ -98,6 +98,11 @@ const education: educationType[] = [
 const experience: experienceType[] = [
   {
     title: "Front-End Developer",
+    company: "Free Lancer",
+    date: "Oct 2024 - Present",
+  },
+  {
+    title: "Front-End Developer",
     company: "Web Masters",
     date: "Nov 2024 - Feb 2025",
   },
@@ -108,12 +113,13 @@ export default function Resume() {
     <motion.section
       transition={{ duration: 0.4, delay: 2, ease: "easeInOut" }}
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }} exit={{opacity:0}}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
       className="min-h-[80vh] flex justify-center items-center py-12 lg:py-0"
     >
       <div className="container mx-auto">
         <Tabs
-        key="portfolio-tabs"
+          key="portfolio-tabs"
           defaultValue="experience"
           className="flex flex-col justify-center items-start lg:flex-row gap-[60px]"
         >
@@ -138,31 +144,31 @@ export default function Resume() {
                   control with Git.
                 </p>
                 <ScrollArea className="h-[400px]">
-
-                 <AnimatePresence mode="wait">
-                  <motion.ul
-                    transition={{ duration: 0.7, delay: 0.3 }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }} exit={{opacity:0}}
-                    className=" grid grid-cols-1 lg:grid-cols-2 gap-[40px]"
-                  >
-                    {experience.map((item: experienceType, index: number) => (
-                      <li
-                        key={index}
-                        className="bg-[#232329] h-[184] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                      >
-                        <span className="text-main">{item.date}</span>
-                        <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                          {item.title}
-                        </h3>
-                        <div className="dat flex items-center gap-3">
-                          <span className="size-[6px] rounded-full bg-main "></span>
-                          <p className="text-white/60">{item.company}</p>
-                        </div>
-                      </li>
-                    ))}
-                  </motion.ul>
-                </AnimatePresence>
+                  <AnimatePresence mode="wait">
+                    <motion.ul
+                      transition={{ duration: 0.7, delay: 0.3 }}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      className=" grid grid-cols-1 lg:grid-cols-2 gap-[40px]"
+                    >
+                      {experience.map((item: experienceType, index: number) => (
+                        <li
+                          key={index}
+                          className="bg-[#232329] h-[184] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                        >
+                          <span className="text-main">{item.date}</span>
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                            {item.title}
+                          </h3>
+                          <div className="dat flex items-center gap-3">
+                            <span className="size-[6px] rounded-full bg-main "></span>
+                            <p className="text-white/60">{item.company}</p>
+                          </div>
+                        </li>
+                      ))}
+                    </motion.ul>
+                  </AnimatePresence>
                 </ScrollArea>
               </div>
             </TabsContent>
@@ -178,29 +184,30 @@ export default function Resume() {
                 </p>
                 <ScrollArea className="h-[400px] -mt-5">
                   <AnimatePresence mode="wait">
-                  <motion.ul
-                    transition={{ duration: 0.7, delay: 0.3 }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }} exit={{opacity:0}}
-                    className=" grid grid-cols-1 lg:grid-cols-2 gap-[40px]"
-                  >
-                    {education.map((item: educationType, index: number) => (
-                      <li
-                        key={index}
-                        className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                      >
-                        <span className="text-main">{item.date}</span>
-                        <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                          {item.title}
-                        </h3>
-                        <div className="dat flex items-center gap-3">
-                          <span className="size-[6px] rounded-full bg-main "></span>
-                          <p className="text-white/60">{item.teacher}</p>
-                        </div>
-                      </li>
-                    ))}
-                  </motion.ul>
-                </AnimatePresence>
+                    <motion.ul
+                      transition={{ duration: 0.7, delay: 0.3 }}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      className=" grid grid-cols-1 lg:grid-cols-2 gap-[40px]"
+                    >
+                      {education.map((item: educationType, index: number) => (
+                        <li
+                          key={index}
+                          className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                        >
+                          <span className="text-main">{item.date}</span>
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                            {item.title}
+                          </h3>
+                          <div className="dat flex items-center gap-3">
+                            <span className="size-[6px] rounded-full bg-main "></span>
+                            <p className="text-white/60">{item.teacher}</p>
+                          </div>
+                        </li>
+                      ))}
+                    </motion.ul>
+                  </AnimatePresence>
                 </ScrollArea>
               </div>
             </TabsContent>
@@ -211,25 +218,26 @@ export default function Resume() {
                 <h3 className="text-4xl font-bold">My skills</h3>
                 <ScrollArea className="h-[450px]">
                   <AnimatePresence mode="wait">
-                  <motion.ul
-                    transition={{ duration: 0.7, delay: 0.3 }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }} exit={{opacity:0}}
-                    className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-[40px] pt-10"
-                  >
-                    {skills.map((skill: skillsType, index: number) => (
-                      <li
-                        key={index}
-                        className="bg-[#232329] overflow-visible group flex justify-center items-center relative size-[180px] text-[60px] rounded-xl transition-all duration-300 hover:text-mainHover"
-                      >
-                        {skill.icon}
-                        <div className="text-sm text-primary opacity-0 group-hover:opacity-100 transition-all rounded-md duration-300 text-center bg-white px-5 py-1 w-fit absolute -top-7 left-1/2 -translate-x-1/2">
-                          {skill.title}
-                        </div>
-                      </li>
-                    ))}
-                  </motion.ul>
-                </AnimatePresence>
+                    <motion.ul
+                      transition={{ duration: 0.7, delay: 0.3 }}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-[40px] pt-10"
+                    >
+                      {skills.map((skill: skillsType, index: number) => (
+                        <li
+                          key={index}
+                          className="bg-[#232329] overflow-visible group flex justify-center items-center relative size-[180px] text-[60px] rounded-xl transition-all duration-300 hover:text-mainHover"
+                        >
+                          {skill.icon}
+                          <div className="text-sm text-primary opacity-0 group-hover:opacity-100 transition-all rounded-md duration-300 text-center bg-white px-5 py-1 w-fit absolute -top-7 left-1/2 -translate-x-1/2">
+                            {skill.title}
+                          </div>
+                        </li>
+                      ))}
+                    </motion.ul>
+                  </AnimatePresence>
                 </ScrollArea>
               </div>
             </TabsContent>
@@ -245,18 +253,22 @@ export default function Resume() {
                 </p>
                 <ScrollArea className="h-[450px]">
                   <AnimatePresence mode="wait">
-                  <motion.ul transition={{ duration: 0.7, delay: 0.3 }}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{opacity:0}}
-                    className="grid grid-cols-1 xl:grid-cols-2 gap-[30px] gap-x-[80px] text-start">
-                    {about.map((item: aboutType, index: number) => (
-                      <li key={index}>
-                        <span className="text-white/60 mr-4">{item.title}</span>
-                        <span className="text-lg">{item.description}</span>
-                      </li>
-                    ))}
-                  </motion.ul>
+                    <motion.ul
+                      transition={{ duration: 0.7, delay: 0.3 }}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      className="grid grid-cols-1 xl:grid-cols-2 gap-[30px] gap-x-[80px] text-start"
+                    >
+                      {about.map((item: aboutType, index: number) => (
+                        <li key={index}>
+                          <span className="text-white/60 mr-4">
+                            {item.title}
+                          </span>
+                          <span className="text-lg">{item.description}</span>
+                        </li>
+                      ))}
+                    </motion.ul>
                   </AnimatePresence>
                 </ScrollArea>
               </div>

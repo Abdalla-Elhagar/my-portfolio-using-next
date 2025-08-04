@@ -29,4 +29,5 @@ export interface ProjectsTypes {
   more: string[];
   github: string;
   website: string;
+  technologies:string[];
 }
