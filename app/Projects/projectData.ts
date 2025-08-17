@@ -14,6 +14,8 @@ import viva from "@/public/assets/projects/viva.webp";
 import weatherApp from "@/public/assets/projects/weatherApp.webp";
 import webMasterECommerce from "@/public/assets/projects/webMasterECommerce.webp";
 import { ProjectsTypes } from "@/components/types";
+import Tasbee7e from "@/public/assets/projects/tasbee7e.webp";
+
 
 export const ProjectsData: ProjectsTypes[] = [
   {
@@ -273,5 +275,28 @@ export const ProjectsData: ProjectsTypes[] = [
     ],
     github: "https://github.com/Abdalla-Elhagar/webMasters-E-commerce",
     website: "https://abdalla-elhagar.github.io/webMasters-E-commerce/",
+  },
+  {
+    id: 17,
+    name: "Tasbee7e",
+    image: Tasbee7e,
+    type: ["React", "tailWind"],
+    technologies: ["React", "TailWind", "Context API"],
+
+    more: [
+      "A Tasbee7e application that allows users to add, view, and count azkar (remembrances).",
+      "Built with a clean and simple interface using React and TypeScript.",
+      "Styled with Tailwind CSS to provide a modern and responsive design.",
+      "Implemented React Router for smooth navigation between pages (Home, Add Zikr, Zikr Details).",
+      "Displays a welcome message on the home screen with a note that no azkar added yet.",
+      "Users can add new azkar with a name and description through an input form.",
+      "Each added zikr appears as a card with details.",
+      "Clicking on a zikr card opens a detailed page showing its name, description, and counter.",
+      "Includes a counter button to increase the zikr count and a reset button to return it back.",
+      "Data for azkar, descriptions, and counter values are persisted using Local Storage.",
+      "Demonstrates state management, interactivity, and real-world UI logic with React, TypeScript, Tailwind CSS, and React Router.",
+    ],
+    github: "https://github.com/Abdalla-Elhagar/tasbee7e",
+    website: "https://tasbee7.vercel.app",
   },
 ];
