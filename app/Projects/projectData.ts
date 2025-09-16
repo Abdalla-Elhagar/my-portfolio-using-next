@@ -130,7 +130,7 @@ export const ProjectsData: ProjectsTypes[] = [
       "buted many features using React like dark mode, that was an awesome challenge, and i gained some experience, and i enjoyed",
     ],
     github: "https://github.com/Abdalla-Elhagar/E-Commerce1",
-    website: "https://shopsy-58f33.firebaseapp.com/",
+    website: "https://shopsy-topaz.vercel.app/",
   },
   {
     id: 11,
