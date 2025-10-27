@@ -54,6 +54,9 @@ export default function Contact() {
             <TabsTrigger className="bg-[#232329] py-3 rounded-md" value="React">
               React
             </TabsTrigger>
+            <TabsTrigger className="bg-[#232329] py-3 rounded-md" value="Backend">
+              Backend
+            </TabsTrigger>
           </TabsList>
 
           {/* content */}
@@ -75,6 +78,8 @@ export default function Contact() {
 
             {/* React projects */}
             <ProjectsContent value="React" />
+            
+            <ProjectsContent value="Backend" />
           </div>
         </Tabs>
       </div>

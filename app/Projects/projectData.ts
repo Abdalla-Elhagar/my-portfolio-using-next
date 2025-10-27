@@ -162,6 +162,7 @@ export const ProjectsData: ProjectsTypes[] = [
       "SASS",
       "Swiper",
       "Lazy-Loading",
+      "React query"
     ],
     more: [
       "Rebook is a social book exchange platform.",
