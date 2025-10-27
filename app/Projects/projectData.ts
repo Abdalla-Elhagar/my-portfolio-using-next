@@ -173,7 +173,26 @@ export const ProjectsData: ProjectsTypes[] = [
       "Rebook is where your next great read finds you — shared, not sold.",
     ],
     github: "https://github.com/Abdalla-Elhagar/ReBook",
-    website: "https://abdalla-elhagar.github.io/ReBook/",
+    website: "https://re-book-0.vercel.app/",
+  },{
+    id: 120,
+    name: "ReBook Backend",
+    image: ReBook,
+    type: ["Backend"],
+    technologies: [
+      "Node", "Express", "Mongoose", "JWT"
+    ],
+    more: [
+  "The Rebook backend is built with Node.js, Express, and MongoDB using Mongoose for data modeling.",
+  "Implements RESTful APIs for user authentication, book management, and profile operations.",
+  "Includes secure user registration and login using JWT.",
+  "Supports CRUD operations for books — users can add, edit, delete, and fetch their own books.",
+  "Integrates CORS and dotenv for secure environment configuration and cross-origin access.",
+  "Password hashing is handled with bcrypt to enhance security and protect user credentials.",
+  "Error handling middleware ensures stable and predictable API responses.",
+  "Deployed on Vercel with a connected MongoDB Atlas cloud database for persistence.",
+],
+    github: "https://github.com/Abdalla-Elhagar/ReBook",
   },
   {
     id: 13,
