@@ -22,7 +22,7 @@ export default function Contact() {
         </p>
 
         <Tabs
-        key="portfolio-tabs"
+          key="portfolio-tabs"
           defaultValue="All"
           className="flex flex-col justify-center items-start lg:flex-row gap-[60px] mt-5"
         >
@@ -39,12 +39,12 @@ export default function Contact() {
             <TabsTrigger className="bg-[#232329] py-3 rounded-md" value="JS">
               JavaScript
             </TabsTrigger>
-            <TabsTrigger
+            {/* <TabsTrigger
               className="bg-[#232329] py-3 rounded-md"
               value="BootStrap"
             >
               BootStrap
-            </TabsTrigger>
+            </TabsTrigger> */}
             <TabsTrigger
               className="bg-[#232329] py-3 rounded-md"
               value="tailWind"
@@ -54,8 +54,11 @@ export default function Contact() {
             <TabsTrigger className="bg-[#232329] py-3 rounded-md" value="React">
               React
             </TabsTrigger>
-            <TabsTrigger className="bg-[#232329] py-3 rounded-md" value="Backend">
-              Backend
+            <TabsTrigger
+              className="bg-[#232329] py-3 rounded-md"
+              value="Full-Stack"
+            >
+              Full-Stack
             </TabsTrigger>
           </TabsList>
 
@@ -71,15 +74,15 @@ export default function Contact() {
             <ProjectsContent value="JS" />
 
             {/* BootStrap projects */}
-            <ProjectsContent value="BootStrap" />
+            {/* <ProjectsContent value="BootStrap" /> */}
 
             {/* tailWind projects */}
             <ProjectsContent value="tailWind" />
 
             {/* React projects */}
             <ProjectsContent value="React" />
-            
-            <ProjectsContent value="Backend" />
+
+            <ProjectsContent value="Full-Stack" />
           </div>
         </Tabs>
       </div>

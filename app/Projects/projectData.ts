@@ -1,21 +1,20 @@
 import template2 from "@/public/assets/projects/template_2.webp";
 import template3 from "@/public/assets/projects/template_3.webp";
 import jsTemplate from "@/public/assets/projects/JS_Template.webp";
-import BootStrap from "@/public/assets/projects/bootstrap.webp";
-import firstPortfolio from "@/public/assets/projects/firstPortfolio.webp";
+// import BootStrap from "@/public/assets/projects/bootstrap.webp";
+// import firstPortfolio from "@/public/assets/projects/firstPortfolio.webp";
 import githubRepo from "@/public/assets/projects/GithubRepos.webp";
-import toDoList from "@/public/assets/projects/TodoList.webp";
+// import toDoList from "@/public/assets/projects/TodoList.webp";
 import shopsy from "@/public/assets/projects/shopsy.webp";
-import ReactPortfolio from "@/public/assets/projects/ReactPortfolio.webp";
+// import ReactPortfolio from "@/public/assets/projects/ReactPortfolio.webp";
 import ReBook from "@/public/assets/projects/ReBook.webp";
-import shoppingCart from "@/public/assets/projects/ShoppingCart.webp";
-import webMasterTask1 from "@/public/assets/projects/task_1.webp";
+// import shoppingCart from "@/public/assets/projects/ShoppingCart.webp";
+// import webMasterTask1 from "@/public/assets/projects/task_1.webp";
 import viva from "@/public/assets/projects/viva.webp";
-import weatherApp from "@/public/assets/projects/weatherApp.webp";
+// import weatherApp from "@/public/assets/projects/weatherApp.webp";
 import webMasterECommerce from "@/public/assets/projects/webMasterECommerce.webp";
 import { ProjectsTypes } from "@/components/types";
-import Tasbee7e from "@/public/assets/projects/tasbee7e.webp";
-
+// import Tasbee7e from "@/public/assets/projects/tasbee7e.webp";
 
 export const ProjectsData: ProjectsTypes[] = [
   {
@@ -60,31 +59,31 @@ export const ProjectsData: ProjectsTypes[] = [
     github: "https://github.com/Abdalla-Elhagar/JavaScript-Template",
     website: "https://abdalla-elhagar.github.io/JavaScript-Template/",
   },
-  {
-    id: 4,
-    name: "First Bootstrap Project",
-    image: BootStrap,
-    type: ["BootStrap"],
-    technologies: ["HTML", "BootStrap"],
-    more: [
-      "I made this project because i wanted to apply what i learned in Bootstrap, that was an awesome challenge, and i gained some experience, and i enjoyed",
-    ],
-    github: "https://github.com/Abdalla-Elhagar/First-Bootstrap-Project",
-    website: "https://abdalla-elhagar.github.io/First-Bootstrap-Project/`",
-  },
-  {
-    id: 6,
-    name: "First Portfolio",
-    image: firstPortfolio,
-    type: ["HTML&CSS"],
-    technologies: ["HTML", "CSS"],
-    more: [
-      "I made this project because i wanted to try to make a portfolio.",
-      "I used HTML and CSS, that was an awesome challenge, and i gained some experience, and i enjoyed",
-    ],
-    github: "https://github.com/Abdalla-Elhagar/First-Portfolio",
-    website: "https://abdalla-elhagar.github.io/First-Portfolio/",
-  },
+  // {
+  //   id: 4,
+  //   name: "First Bootstrap Project",
+  //   image: BootStrap,
+  //   type: ["BootStrap"],
+  //   technologies: ["HTML", "BootStrap"],
+  //   more: [
+  //     "I made this project because i wanted to apply what i learned in Bootstrap, that was an awesome challenge, and i gained some experience, and i enjoyed",
+  //   ],
+  //   github: "https://github.com/Abdalla-Elhagar/First-Bootstrap-Project",
+  //   website: "https://abdalla-elhagar.github.io/First-Bootstrap-Project/`",
+  // },
+  // {
+  //   id: 6,
+  //   name: "First Portfolio",
+  //   image: firstPortfolio,
+  //   type: ["HTML&CSS"],
+  //   technologies: ["HTML", "CSS"],
+  //   more: [
+  //     "I made this project because i wanted to try to make a portfolio.",
+  //     "I used HTML and CSS, that was an awesome challenge, and i gained some experience, and i enjoyed",
+  //   ],
+  //   github: "https://github.com/Abdalla-Elhagar/First-Portfolio",
+  //   website: "https://abdalla-elhagar.github.io/First-Portfolio/",
+  // },
   {
     id: 7,
     name: "GitHub Repos",
@@ -99,22 +98,22 @@ export const ProjectsData: ProjectsTypes[] = [
     github: "https://github.com/Abdalla-Elhagar/GitHub-Repos",
     website: "https://abdalla-elhagar.github.io/GitHub-Repos/",
   },
-  {
-    id: 8,
-    name: "To Do List",
-    image: toDoList,
-    type: ["JS"],
-    technologies: ["HTML", "CSS", "JS"],
-    more: [
-      "I made this project because i wanted to apply what i learned in Java Script.",
-      "I used the DOM features to add tasks to the padge.",
-      "complete the task if i clicked on it.",
-      "delete any task if i click on delete button.",
-      "I used the BOM features to save the tasks in local storage, that was an awesome challenge, and i gained some experience, and i enjoyed",
-    ],
-    github: "https://github.com/Abdalla-Elhagar/TO-DO-LIST",
-    website: "https://abdalla-elhagar.github.io/TO-DO-LIST/",
-  },
+  // {
+  //   id: 8,
+  //   name: "To Do List",
+  //   image: toDoList,
+  //   type: ["JS"],
+  //   technologies: ["HTML", "CSS", "JS"],
+  //   more: [
+  //     "I made this project because i wanted to apply what i learned in Java Script.",
+  //     "I used the DOM features to add tasks to the padge.",
+  //     "complete the task if i clicked on it.",
+  //     "delete any task if i click on delete button.",
+  //     "I used the BOM features to save the tasks in local storage, that was an awesome challenge, and i gained some experience, and i enjoyed",
+  //   ],
+  //   github: "https://github.com/Abdalla-Elhagar/TO-DO-LIST",
+  //   website: "https://abdalla-elhagar.github.io/TO-DO-LIST/",
+  // },
 
   {
     id: 10,
@@ -132,29 +131,29 @@ export const ProjectsData: ProjectsTypes[] = [
     github: "https://github.com/Abdalla-Elhagar/E-Commerce1",
     website: "https://shopsy-topaz.vercel.app/",
   },
-  {
-    id: 11,
-    name: "React Portfolio",
-    image: ReactPortfolio,
-    type: ["React", "tailWind"],
-    technologies: ["React", "TailWind", "Framer-Motion"],
-    more: [
-      "A personal portfolio website built using React and Tailwind CSS.",
-      "Showcases all previous front-end projects in a clean and modern layout.",
-      "Used Framer Motion to add smooth animations and interactive transitions.",
-      "Includes a contact form that allows users to send messages directly to my email.",
-      "Features animated elements and images to enhance visual appeal.",
-      "Fully responsive design optimized for all screen sizes.",
-      "Built to reflect my skills, creativity, and personal brand as a front-end developer.",
-    ],
-    github: "https://github.com/Abdalla-Elhagar/React-Portfolio",
-    website: "https://react-portfolio-10c07.firebaseapp.com/",
-  },
+  // {
+  //   id: 11,
+  //   name: "React Portfolio",
+  //   image: ReactPortfolio,
+  //   type: ["React", "tailWind"],
+  //   technologies: ["React", "TailWind", "Framer-Motion"],
+  //   more: [
+  //     "A personal portfolio website built using React and Tailwind CSS.",
+  //     "Showcases all previous front-end projects in a clean and modern layout.",
+  //     "Used Framer Motion to add smooth animations and interactive transitions.",
+  //     "Includes a contact form that allows users to send messages directly to my email.",
+  //     "Features animated elements and images to enhance visual appeal.",
+  //     "Fully responsive design optimized for all screen sizes.",
+  //     "Built to reflect my skills, creativity, and personal brand as a front-end developer.",
+  //   ],
+  //   github: "https://github.com/Abdalla-Elhagar/React-Portfolio",
+  //   website: "https://react-portfolio-10c07.firebaseapp.com/",
+  // },
   {
     id: 12,
     name: "ReBook",
     image: ReBook,
-    type: ["React", "tailWind", "SASS", "Redux-Toolkit"],
+    type: ["React", "tailWind", "Redux-Toolkit"],
     technologies: [
       "React",
       "TailWind",
@@ -162,7 +161,7 @@ export const ProjectsData: ProjectsTypes[] = [
       "SASS",
       "Swiper",
       "Lazy-Loading",
-      "React query"
+      "React query",
     ],
     more: [
       "Rebook is a social book exchange platform.",
@@ -175,61 +174,60 @@ export const ProjectsData: ProjectsTypes[] = [
     ],
     github: "https://github.com/Abdalla-Elhagar/ReBook",
     website: "https://re-book-0.vercel.app/",
-  },{
+  },
+  {
     id: 120,
     name: "ReBook Backend",
     image: ReBook,
-    type: ["Backend"],
-    technologies: [
-      "Node", "Express", "Mongoose", "JWT"
-    ],
+    type: ["Full-Stack"],
+    technologies: ["Node", "Express", "Mongoose", "JWT"],
     more: [
-  "The Rebook backend is built with Node.js, Express, and MongoDB using Mongoose for data modeling.",
-  "Implements RESTful APIs for user authentication, book management, and profile operations.",
-  "Includes secure user registration and login using JWT.",
-  "Supports CRUD operations for books — users can add, edit, delete, and fetch their own books.",
-  "Integrates CORS and dotenv for secure environment configuration and cross-origin access.",
-  "Password hashing is handled with bcrypt to enhance security and protect user credentials.",
-  "Error handling middleware ensures stable and predictable API responses.",
-  "Deployed on Vercel with a connected MongoDB Atlas cloud database for persistence.",
-],
+      "The Rebook backend is built with Node.js, Express, and MongoDB using Mongoose for data modeling.",
+      "Implements RESTful APIs for user authentication, book management, and profile operations.",
+      "Includes secure user registration and login using JWT.",
+      "Supports CRUD operations for books — users can add, edit, delete, and fetch their own books.",
+      "Integrates CORS and dotenv for secure environment configuration and cross-origin access.",
+      "Password hashing is handled with bcrypt to enhance security and protect user credentials.",
+      "Error handling middleware ensures stable and predictable API responses.",
+      "Deployed on Vercel with a connected MongoDB Atlas cloud database for persistence.",
+    ],
     github: "https://github.com/Abdalla-Elhagar/rebook–backend",
   },
-  {
-    id: 13,
-    name: "Shopping cart",
-    image: shoppingCart,
-    type: ["JS", "tailWind"],
-    technologies: ["JS", "TailWind"],
-    more: [
-      "A front-end project called Shopping Cart, developed during the Webmasters training.",
-      "Built using HTML, Tailwind CSS, and JavaScript.",
-      "Fetched product data using fetch() from an external API.",
-      "Created Register and Login pages with local user authentication.",
-      "Stored user and product data in Local Storage.",
-      "Built a shopping cart system with item management.",
-      "Designed to be responsive for various screen sizes using Tailwind.",
-    ],
-    github: "https://github.com/Abdalla-Elhagar/Web-Masters-ShoppingCart",
-    website: "https://abdalla-elhagar.github.io/Web-Masters-ShoppingCart/",
-  },
-  {
-    id: 14,
-    name: "Web Masters Task1",
-    image: webMasterTask1,
-    type: ["HTML&CSS"],
-    technologies: ["HTML", "CSS"],
-    more: [
-      "A front-end project built using only HTML and CSS.",
-      "This was the first task during the Webmasters training.",
-      "Focused on creating a full UI layout without JavaScript.",
-      "Used CSS Flexbox and Grid for layout structuring.",
-      "Applied modern CSS design techniques including colors, spacing, alignment, and typography.",
-      "Designed to be responsive across different screen sizes.",
-    ],
-    github: "https://github.com/Abdalla-Elhagar/task1-Web-Masters",
-    website: "https://abdalla-elhagar.github.io/task1-Web-Masters/",
-  },
+  // {
+  //   id: 13,
+  //   name: "Shopping cart",
+  //   image: shoppingCart,
+  //   type: ["JS", "tailWind"],
+  //   technologies: ["JS", "TailWind"],
+  //   more: [
+  //     "A front-end project called Shopping Cart, developed during the Webmasters training.",
+  //     "Built using HTML, Tailwind CSS, and JavaScript.",
+  //     "Fetched product data using fetch() from an external API.",
+  //     "Created Register and Login pages with local user authentication.",
+  //     "Stored user and product data in Local Storage.",
+  //     "Built a shopping cart system with item management.",
+  //     "Designed to be responsive for various screen sizes using Tailwind.",
+  //   ],
+  //   github: "https://github.com/Abdalla-Elhagar/Web-Masters-ShoppingCart",
+  //   website: "https://abdalla-elhagar.github.io/Web-Masters-ShoppingCart/",
+  // },
+  // {
+  //   id: 14,
+  //   name: "Web Masters Task1",
+  //   image: webMasterTask1,
+  //   type: ["HTML&CSS"],
+  //   technologies: ["HTML", "CSS"],
+  //   more: [
+  //     "A front-end project built using only HTML and CSS.",
+  //     "This was the first task during the Webmasters training.",
+  //     "Focused on creating a full UI layout without JavaScript.",
+  //     "Used CSS Flexbox and Grid for layout structuring.",
+  //     "Applied modern CSS design techniques including colors, spacing, alignment, and typography.",
+  //     "Designed to be responsive across different screen sizes.",
+  //   ],
+  //   github: "https://github.com/Abdalla-Elhagar/task1-Web-Masters",
+  //   website: "https://abdalla-elhagar.github.io/task1-Web-Masters/",
+  // },
   {
     id: 15,
     name: "Viva Decor",
@@ -248,75 +246,79 @@ export const ProjectsData: ProjectsTypes[] = [
     github: "https://github.com/Abdalla-Elhagar/Web-Masters-VivaDecor",
     website: "https://abdalla-elhagar.github.io/Web-Masters-VivaDecor/",
   },
-  {
-    id: 16,
-    name: "weather App",
-    image: weatherApp,
-    type: ["React", "tailWind"],
-    technologies: ["React", "TailWind"],
+  // {
+  //   id: 16,
+  //   name: "weather App",
+  //   image: weatherApp,
+  //   type: ["React", "tailWind"],
+  //   technologies: ["React", "TailWind"],
 
-    more: [
-      "A weather application developed as part of the Webmasters training tasks.",
-      "Built using React and Tailwind CSS.",
-      "Fetched real-time weather data using the OpenWeatherAPI.",
-      "Displayed weather details such as temperature, humidity, and weather conditions based on user input.",
-      "Used React components and state management to handle API responses and update the UI dynamically.",
-      "Styled using Tailwind CSS for a clean and responsive design.",
-      "Demonstrates integration of third-party APIs in a front-end project.",
-    ],
-    github: "https://github.com/Abdalla-Elhagar/webMasters-WeatherApp",
-    website: "https://weather-app-90808.web.app/",
-  },
+  //   more: [
+  //     "A weather application developed as part of the Webmasters training tasks.",
+  //     "Built using React and Tailwind CSS.",
+  //     "Fetched real-time weather data using the OpenWeatherAPI.",
+  //     "Displayed weather details such as temperature, humidity, and weather conditions based on user input.",
+  //     "Used React components and state management to handle API responses and update the UI dynamically.",
+  //     "Styled using Tailwind CSS for a clean and responsive design.",
+  //     "Demonstrates integration of third-party APIs in a front-end project.",
+  //   ],
+  //   github: "https://github.com/Abdalla-Elhagar/webMasters-WeatherApp",
+  //   website: "https://weather-app-90808.web.app/",
+  // },
   {
     id: 17,
-    name: "webMasters E-commerce",
+    name: "Exclusive E-Commerce",
     image: webMasterECommerce,
-    type: ["React", "tailWind"],
+    type: ["Full-Stack", "React", "TypeScript", "Node.js"],
     technologies: [
       "React",
-      "TailWind",
-      "Framer-Motion",
-      "Swiper",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
       "Redux-Toolkit",
+      "React Query",
+      "Tailwind CSS",
+      "JWT",
+      "Bcrypt",
+      "Framer-Motion",
+      "Swiper.js",
     ],
-
     more: [
-      "A complete front-end e-Commerce application developed as the final task in the Webmasters training program.",
-      "Built using React, Redux Toolkit, and Tailwind CSS.",
-      "Used Swiper.js to implement product sliders and carousels.",
-      "Implemented user authentication with Register and Login pages.",
-      "Users must log in to add products to their cart or favorites.",
-      "Enabled adding and removing products to/from the shopping cart and favorites list.",
-      "Stored user and product data using Local Storage for persistence.",
-      "Created a user profile page where users can view and update their personal information.",
-      "Used Framer Motion to add animations and transitions across pages.",
-      "Included categorized products (e.g., TV, Gaming, etc.) for better browsing experience.",
-      "Demonstrates real-world e-commerce UI logic including state management, interactivity, and responsive design.",
+      "A modern full-stack e-commerce web application featuring real-time data synchronization between a secure Node.js backend and a dynamic React frontend.",
+      "Engineered a scalable RESTful API with Express and MongoDB to manage product catalogs, user profiles, and persistent shopping states.",
+      "Implemented secure JWT-based user authentication (Login/Register) with password hashing via bcrypt to guarantee data protection.",
+      "Developed a responsive, strictly-typed user interface using React and TypeScript, leveraging Tailwind CSS for seamless cross-device layouts.",
+      "Managed robust client-side state using Redux Toolkit paired with React Query for efficient server data fetching, caching, and background synchronization.",
+      "Built dynamic interactive features including live quantity control, secure shopping cart workflows, user profiles, and interactive favorites lists.",
+      "Enhanced user experience with smooth page transitions using Framer Motion, dynamic product sliders via Swiper.js, and real-time toast notifications.",
+      "Configured environmental safety using dotenv and CORS, with the complete multi-repo architecture deployed successfully on Vercel.",
     ],
-    github: "https://github.com/Abdalla-Elhagar/webMasters-E-commerce",
-    website: "https://abdalla-elhagar.github.io/webMasters-E-commerce/",
+    website: "https://exclusive-frontend-tau.vercel.app/",
+    github: "https://github.com/Abdalla-Elhagar/Exclusive",
   },
-  {
-    id: 17,
-    name: "Tasbee7e",
-    image: Tasbee7e,
-    type: ["React", "tailWind"],
-    technologies: ["React", "TailWind", "Context API"],
+  // {
+  //   id: 17,
+  //   name: "Tasbee7e",
+  //   image: Tasbee7e,
+  //   type: ["React", "tailWind"],
+  //   technologies: ["React", "TailWind", "Context API"],
 
-    more: [
-      "A Tasbee7e application that allows users to add, view, and count azkar (remembrances).",
-      "Built with a clean and simple interface using React and TypeScript.",
-      "Styled with Tailwind CSS to provide a modern and responsive design.",
-      "Implemented React Router for smooth navigation between pages (Home, Add Zikr, Zikr Details).",
-      "Displays a welcome message on the home screen with a note that no azkar added yet.",
-      "Users can add new azkar with a name and description through an input form.",
-      "Each added zikr appears as a card with details.",
-      "Clicking on a zikr card opens a detailed page showing its name, description, and counter.",
-      "Includes a counter button to increase the zikr count and a reset button to return it back.",
-      "Data for azkar, descriptions, and counter values are persisted using Local Storage.",
-      "Demonstrates state management, interactivity, and real-world UI logic with React, TypeScript, Tailwind CSS, and React Router.",
-    ],
-    github: "https://github.com/Abdalla-Elhagar/tasbee7e",
-    website: "https://tasbee7.vercel.app",
-  },
+  //   more: [
+  //     "A Tasbee7e application that allows users to add, view, and count azkar (remembrances).",
+  //     "Built with a clean and simple interface using React and TypeScript.",
+  //     "Styled with Tailwind CSS to provide a modern and responsive design.",
+  //     "Implemented React Router for smooth navigation between pages (Home, Add Zikr, Zikr Details).",
+  //     "Displays a welcome message on the home screen with a note that no azkar added yet.",
+  //     "Users can add new azkar with a name and description through an input form.",
+  //     "Each added zikr appears as a card with details.",
+  //     "Clicking on a zikr card opens a detailed page showing its name, description, and counter.",
+  //     "Includes a counter button to increase the zikr count and a reset button to return it back.",
+  //     "Data for azkar, descriptions, and counter values are persisted using Local Storage.",
+  //     "Demonstrates state management, interactivity, and real-world UI logic with React, TypeScript, Tailwind CSS, and React Router.",
+  //   ],
+  //   github: "https://github.com/Abdalla-Elhagar/tasbee7e",
+  //   website: "https://tasbee7.vercel.app",
+  // },
 ];
