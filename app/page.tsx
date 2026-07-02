@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
@@ -11,9 +11,12 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <motion.section
-    transition={{ duration: 0.4, delay: 2, ease: "easeInOut" }}
+      transition={{ duration: 0.4, delay: 2, ease: "easeInOut" }}
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }} exit={{opacity:0}} className="h-full">
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="h-full"
+    >
       <div className="container mx-auto h-full">
         <div className="flex flex-col gap-5 lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
           {/* text */}
@@ -33,7 +36,10 @@ export default function Home() {
 
             {/* btn and socials */}
             <div className="flex flex-col lg:flex-row items-center gap-8">
-              <a href="/cv/AbdallaElhagarResume.pdf" download>
+              <a
+                href="https://drive.google.com/file/d/1cXDQ175CJ4t95NO7iSAzQBsUBYNb3IsF/view?usp=drive_link"
+                target="_blank"
+              >
                 <Button
                   className="uppercase flex items-center gap-2 hover:bg-main hover:text-primary transition-all duration-500"
                   variant="outline"

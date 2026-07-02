@@ -151,7 +151,7 @@ export const ProjectsData: ProjectsTypes[] = [
   // },
   {
     id: 12,
-    name: "ReBook",
+    name: "ReBook Frontend",
     image: ReBook,
     type: ["React", "tailWind", "Redux-Toolkit"],
     technologies: [
